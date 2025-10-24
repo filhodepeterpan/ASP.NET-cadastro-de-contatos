@@ -9,7 +9,12 @@ namespace primeira_aplicacao_asp.net_mvc.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            HomeModel home = new HomeModel();
+
+            home.Nome = "Douglas";
+            home.Email = "douglassoares.cinema@gmail.com";
+
+            return View(home);
         }
 
         public IActionResult Privacy()
