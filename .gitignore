@@ -1,0 +1,24 @@
+﻿# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build
+bin/
+obj/
+Debug/
+Release/
+
+# Logs
+*.log
+
+# Pacotes
+*.nupkg
+packages/
+
+# Outros
+TestResults/
+*.cache
+*.dbmdl
