@@ -4,8 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>cadastro-de-contatos</RootNamespace>
-    <AssemblyName>cadastro-de-contatos</AssemblyName>
+    <RootNamespace>CadastroDeContatos</RootNamespace>
+    <AssemblyName>CadastroDeContatos</AssemblyName>
   </PropertyGroup>
 
 </Project>
