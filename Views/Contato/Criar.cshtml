@@ -23,7 +23,13 @@
     <br>
 
     <div id="botoes" class="d-md-flex justify-content-md-start gap-2">
-        <button type="submit" class="btn btn-primary">Cadastrar</button>
-        <a roule="button" class="btn btn-dark" asp-controller="Contato" asp-action="index">Voltar</a>
-     </div>
+        <button type="submit" class="btn btn-primary d-flex align-items-center gap-1">
+            <ion-icon name="create-sharp"></ion-icon>
+            <span>Cadastrar</span>
+        </button>
+        <a role="button" class="btn btn-dark d-flex align-items-center gap-1" asp-controller="Contato" asp-action="index">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+            <span>Voltar</span>
+        </a>
+    </div>
 </form>
