@@ -7,3 +7,4 @@
 - C#
 - ASP.NET Core MVC
 - EF (Entity Framework)
+- SQL Server
