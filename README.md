@@ -5,5 +5,5 @@
 
 ## Tecnologias
 - C#
-- ASP.NET MVC
+- ASP.NET Core MVC
 - EF (Entity Framework)

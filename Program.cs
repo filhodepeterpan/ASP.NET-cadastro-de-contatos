@@ -1,4 +1,12 @@
+using CadastroDeContatos.Data;
+using Microsoft.EntityFrameworkCore;
+using System;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// configurando db
+builder.Services.AddDbContext<BancoContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
