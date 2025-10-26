@@ -1,4 +1,5 @@
 using CadastroDeContatos.Data;
+using CadastroDeContatos.Repositorio;
 using Microsoft.EntityFrameworkCore;
 using System;
 
@@ -7,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 // configurando db
 builder.Services.AddDbContext<BancoContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase")));
+
+builder.Services.AddScoped<IContatoRepositorio, ContatoRepositorio>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
