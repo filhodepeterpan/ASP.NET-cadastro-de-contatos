@@ -37,9 +37,11 @@ namespace CadastroDeContatos.Controllers
             return View(contato);
         }
 
-        public IActionResult Apagar()
+        public IActionResult Apagar(int id )
         {
-            return View();
+            _contatoRepositorio.Apagar(id);
+
+            return RedirectToAction("index");
         }
 
         [HttpPost]
