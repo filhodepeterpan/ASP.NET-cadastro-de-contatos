@@ -26,13 +26,14 @@ namespace CadastroDeContatos.Controllers
         public IActionResult Editar(int id)
         {
             ContatoModel contato = _contatoRepositorio.ListarPorId(id);
-            
+
             return View(contato);
         }
 
-        public IActionResult ApagarConfirmacao(int id )
+        public IActionResult ApagarConfirmacao(int id)
         {
             ContatoModel contato = _contatoRepositorio.ListarPorId(id);
+
             return View(contato);
         }
 
