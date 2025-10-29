@@ -10,6 +10,8 @@
 </div>
 
 <form asp-controller="Contato" asp-action="Alterar" method="POST">
+    <input type="hidden" asp-for="Id">
+
     <div class="form-group">
         <label for="nome">Nome</label>
         <input type="text" asp-for="Nome" class="form-control" placeholder="Digite seu nome">
