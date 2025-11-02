@@ -52,15 +52,18 @@ namespace CadastroDeContatos.Controllers
                 _contatoRepositorio.Adicionar(contato);
                 return RedirectToAction("Index");
             }
-            return View();
+            return View(contato);
         }
 
         [HttpPost]
         public IActionResult Alterar(ContatoModel contato)
         {
-            _contatoRepositorio.Atualizar(contato);
-
-            return RedirectToAction("index");
+            if (ModelState.IsValid)
+            {
+                _contatoRepositorio.Atualizar(contato);
+                return RedirectToAction("Index");
+            }
+            return View(contato);
         }
     }
 
