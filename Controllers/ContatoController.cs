@@ -63,7 +63,7 @@ namespace CadastroDeContatos.Controllers
                 _contatoRepositorio.Atualizar(contato);
                 return RedirectToAction("Index");
             }
-            return View(contato);
+            return View("Editar", contato);
         }
     }
 
